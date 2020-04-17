@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GoogleFirebase</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nama_mhs">Nama Mhs :</string>
+    <string name="phone">Phone :</string>
+    <string name="simpan">Simpan</string>
+    <string name="no_mhs">No Mhs :</string>
+    <string name="hapus">Hapus</string>
+</resources>
