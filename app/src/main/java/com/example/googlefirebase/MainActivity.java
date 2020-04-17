@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         Mahasiswa mhs = new Mahasiswa(noMhs.getText().toString(),
                 namaMhs.getText().toString(),
                 phoneMhs.getText().toString());
-
         firebaseFirestoreDb.collection("DaftarMhs").document().set(mhs)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
