@@ -30,16 +30,19 @@ public class fragment_firebird_example extends Fragment {
     private EditText noMhs;
     private EditText namaMhs;
     private EditText phoneMhs;
+    private Button buttonSimpan;
+    private Button buttonHapus;
 
     public fragment_firebird_example() {
         // Required empty public constructor
     }
 
-    @Override
+    /*@Override
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_firebird_example, container, false);
+        firebaseFirestoreDb = FirebaseFirestore.getInstance();
         noMhs = view.findViewById(R.id.noMhs);
         namaMhs = view.findViewById(R.id.namaMhs);
         phoneMhs = view.findViewById(R.id.phoneMhs);
@@ -52,8 +55,6 @@ public class fragment_firebird_example extends Fragment {
                 //sanity check
                 if (!noMhs.getText().toString().isEmpty() && !namaMhs.getText().toString().isEmpty()) {
                     tambahMahasiswa();
-                    Toast.makeText(requireActivity(), "No dan Nama Mhs tidak boleh kosong",
-                            Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(requireActivity(), "No dan Nama Mhs tidak boleh kosong",
                             Toast.LENGTH_SHORT).show();
@@ -72,9 +73,23 @@ public class fragment_firebird_example extends Fragment {
 
         getDataMahasiswa();
         return view;
+    }*/
+    @Override
+    public View onCreateView(LayoutInflater inflater,
+                             ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_firebird_example, container, false);
+        noMhs = view.findViewById(R.id.noMhs);
+        namaMhs = view.findViewById(R.id.namaMhs);
+        phoneMhs = view.findViewById(R.id.phoneMhs);
+        buttonSimpan = view.findViewById(R.id.simpanButton);
+        buttonHapus = view.findViewById(R.id.hapusButton);
+
+        return view;
     }
 
-    private void tambahMahasiswa() {
+
+    /*private void tambahMahasiswa() {
         firebaseFirestoreDb = FirebaseFirestore.getInstance();
         Mahasiswa mhs = new Mahasiswa(noMhs.getText().toString(),
                 namaMhs.getText().toString(),
@@ -145,7 +160,7 @@ public class fragment_firebird_example extends Fragment {
                                 Toast.LENGTH_SHORT).show();
                     }
                 });
-    }
+    }*/
 
 
   /*  @Override
